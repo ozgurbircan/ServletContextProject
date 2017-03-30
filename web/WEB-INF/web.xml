@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>ServletContextEx</servlet-name>
+        <servlet-class>servletcontext.ServletContextEx</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletContextEx</servlet-name>
+        <url-pattern>/ServletContextEx</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ServletConfigEx</servlet-name>
+        <servlet-class>servletcontext.ServletConfigEx</servlet-class>
+        <init-param>
+            <param-name>ad</param-name>
+            <param-value>Alican</param-value>
+        </init-param>
+        <init-param>
+
+            <param-name>soyad</param-name>
+            <param-value>Akkus</param-value>
+        </init-param>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletConfigEx</servlet-name>
+        <url-pattern>/ServletConfigEx</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ServletConfigEx2</servlet-name>
+        <servlet-class>servletcontext.ServletConfigEx2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletConfigEx2</servlet-name>
+        <url-pattern>/ServletConfigEx2</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <context-param>
+        <param-name>ders</param-name>
+        <param-value>java</param-value>
+    </context-param>
+
+
+
+
+
+    <context-param>
+        <param-name>studentName</param-name>
+        <param-value>ozgurbircan</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>studentAge</param-name>
+        <param-value>21</param-value>
+    </context-param>
+
+
+</web-app>
